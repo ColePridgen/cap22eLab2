@@ -76,6 +76,7 @@ print("Result of squareme():", result_squareme)
 #### Answer to Question 4
 [Scatter - ![image](https://github.com/user-attachments/assets/ee140d8f-9b7e-4c60-a884-934231f6151c)
 ]
+
 [Boxplot - ![image](https://github.com/user-attachments/assets/bc282a15-ef33-4df9-9d08-76fe0eafb883)
 
 ```python
