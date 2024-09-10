@@ -1,4 +1,18 @@
-def myrec(x):
+# Homework Report
+
+## Personal Details
+**Name:** [Cole Pridgen]
+**Date:** [9/10/24]
+**Course:** [ISC4221]
+**Instructor:** [Olmo S. Zavala Romero]
+
+## Homework Questions and Answers
+
+#### Answer to Question 1
+[Answer while x = 1 is 2]
+
+```python
+# def myrec(x):
     if x < 0:
         raise Exception("Input number must be greater than or equal to 0.")
     elif x == 0:
@@ -10,46 +24,22 @@ x = 1
 result = myrec(x)
 print(result)
 
-result = 2
+```
 
-####
+#### Answer to Question 2
+[Insert a description for the second answer here]
 
-import os
+```python
+# Insert your code for the second answer here
+```
 
-def basic_io(path):
-    # Check if the folder exists
-    if not os.path.exists(path):
-        print("Folder does not exist.")
-        return
-    
-    # Initialize the lists for names and types
-    names_list = []
-    types_list = []
-    
-    # Get the list of files and folders in the directory
-    with os.scandir(path) as entries:
-        for entry in entries:
-            names_list.append(entry.name)
-            if entry.is_file():
-                types_list.append('file')
-            elif entry.is_dir():
-                types_list.append('folder')
-    
-    # Sort the names list
-    names_list.sort()
-    
-    # Create the result dictionary
-    result = {
-        'number_of_files_or_folders': len(names_list),
-        'files_or_folders_list': names_list,
-        'type_list': types_list
-    }
-    
-    return result
+#### Answer to Question 3
 
-########
+[Result of add2and3(): 33
+Result of squareme(): [16 25 36]]
 
-import numpy as np
+```python
+# import numpy as np
 
 def add2and3(matrix):
     if matrix.shape[0] < 2 or matrix.shape[1] < 3:
@@ -81,10 +71,14 @@ row_number = 1
 result_squareme = squareme(matrix, row_number)
 print("Result of squareme():", result_squareme)
 
-Add2and3 = 33
-Squareme = [16, 25, 36]
+```
 
-##########
+#### Answer to Question 4
+[Scatter - ![image](https://github.com/user-attachments/assets/ee140d8f-9b7e-4c60-a884-934231f6151c)
+]
+[Boxplot - ![image](https://github.com/user-attachments/assets/bc282a15-ef33-4df9-9d08-76fe0eafb883)
+
+```python
 
 import matplotlib.pyplot as plt
 import matplotlib
@@ -114,15 +108,17 @@ ax.yaxis.grid(True, linestyle='-', which='major', color='lightgrey', alpha=0.5)
 ax.set_xlabel("Sopas")
 ax.set_ylabel("Pericon")
 
-Scatter
-![image](https://github.com/user-attachments/assets/e28af3e6-a801-4619-bfb4-e5c6e567557c)
-
-Boxplot
-![image](https://github.com/user-attachments/assets/5d4adc2a-849f-49ac-82c1-df25515e5662)
+```
+---
 
 
+## Additional Comments or Notes
 
+[This lab was fairly simple to me, however dealing with os and file arrangement was a first for me. As I progress through the semester, I expect to have my confidence in this field increase]
 
+---
 
+## References 
 
-
+- [ChatGPT]
+- [Github Copilot]
