@@ -110,9 +110,10 @@ print("Result of squareme():", result_squareme)
 #### Answer to Question 4
 [Scatter - ![image](https://github.com/user-attachments/assets/ee140d8f-9b7e-4c60-a884-934231f6151c)
 ]
+Demonstrates the flow of the graph with sin like trend
 
 [Boxplot - ![image](https://github.com/user-attachments/assets/bc282a15-ef33-4df9-9d08-76fe0eafb883)
-
+I can interpret from this graph that the lower quartile range is consistently at 30 for both name 1 and name 2, however the upper quartile range increases for name 2 from 70 to around 78
 ```python
 
 import matplotlib.pyplot as plt
