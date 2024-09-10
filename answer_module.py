@@ -17,29 +17,34 @@ def basic_io(folder_path):
     if not os.path.exists(folder_path):
         print("Folder does not exist.")
         return None
-    
+
+#create dictionary
     result = {
         'number_of_files_or_folders': 0,
         'files_or_folders_names': [],
         'files_or_folders_types': []
     }
 
-
+#List all items
     items = os.listdir(folder_path)
     items.sort()
 
+#iterate each item in the folder by name, type, and folder/file
     for item in items:
         result["files_or_folders_names"].append(item)
         item_path = os.path.join(folder_path, item)
         if os.path.isfile(item_path):
             result["files_or_folders_types"].append("file")
-            result["files_or_folders_names"].append(os.path.basename(item_path))
-            result["number_of_files_or_folders"] =+ 1
         else:
             result["file_or_folder_types"].append("folder")
 
     result["number_of_files_or_folders"] = len(result["files_or_folders_names"])
     return result
+
+#print the results from the file
+folder_path = '/Users/colepridgen/Desktop/ISC4221'
+print(basic_io(folder_path))
+
 
 import numpy as np
 
@@ -50,14 +55,16 @@ def add2and3(matrix):
     
     second_row_sum = np.sum(matrix[1, :])
     third_column_sum = np.sum(matrix[:, 2])
-    
+
+#sum the second and third row elements
     return second_row_sum + third_column_sum
 
 def squareme(matrix, row_number):
     if row_number >= matrix.shape[0]:
         print("Row not found.")
         return
-    
+
+#square each row of the matrix
     row = matrix[row_number, :]
     squared_row = np.square(row)
     
